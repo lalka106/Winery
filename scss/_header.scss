@@ -1,0 +1,27 @@
+/*Header*/
+.header {
+	margin: 0 0 583px 0;
+	&__menu {
+		display: flex;
+		flex: 1 1 25%;
+
+		&_item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 50px;
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 150%;
+			list-style-type: none;
+			border: 1px solid white;
+			border-left: none;
+			width: 285px;
+			&:last-child {
+				border-right: none;
+			}
+		}
+	}
+}
