@@ -122,6 +122,107 @@ select {
   border-right: none;
 }
 
+/*Footer*/
+.footer {
+  background: #998431;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .container {
+  height: 220px;
+  width: 1110px;
+}
+
+.footer__menu {
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  margin: 50px 0px 0px 0px;
+  list-style-type: none;
+}
+
+.footer__menu_item {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0px 30px 0px 30px;
+  /* identical to box height, or 21px */
+  /* white */
+  color: #ffffff;
+}
+
+.footer__contact {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+.footer__contact_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+  border-right: 1px solid white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__contact_item:nth-child(1) {
+  width: 350px;
+}
+
+.footer__contact_item:nth-child(2) {
+  width: 235px;
+}
+
+.footer__contact_item:nth-child(3) {
+  width: 260px;
+}
+
+.footer__contact_item:nth-child(4) {
+  width: 265px;
+  border: none;
+}
+
+.footer__contact_item-links {
+  margin: 0px 12.5px 0px 12.5px;
+}
+
 body {
   max-width: 1920px;
   font-family: "Playfair Display", serif;
@@ -336,7 +437,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 445px;
+  width: 451px;
   height: 84px;
   /* text/14r */
   font-family: Montserrat;

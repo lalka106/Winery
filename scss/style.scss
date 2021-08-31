@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Playfair+Display:wght@400;500;700;900&display=swap");
 @import "_nullstyle";
 @import "_header";
+@import "_footer";
 
 body {
 	max-width: 1920px;
@@ -180,7 +181,7 @@ body {
 
 	&__subtitle {
 		display: flex;
-		width: 445px;
+		width: 451px;
 		height: 84px;
 		/* text/14r */
 
