@@ -21,6 +21,7 @@
 		// width: 1110px;
 		list-style-type: none;
 		&_item {
+			cursor: pointer;
 			font-family: Montserrat;
 			font-style: normal;
 			font-weight: 300;
@@ -33,6 +34,9 @@
 			/* white */
 
 			color: #ffffff;
+			&:hover {
+				color: red;
+			}
 		}
 	}
 
@@ -74,7 +78,29 @@
 		}
 
 		&_item-links {
+			position: relative;
 			margin: 0px 12.5px 0px 12.5px;
+			&:hover {
+				cursor: pointer;
+				animation-name: dragging;
+				animation-duration: 400ms;
+				animation-timing-function: linear;
+				animation-direction: alternate;
+				animation-iteration-count: infinite;
+			}
 		}
+	}
+}
+
+@keyframes dragging {
+	0% {
+		// margin: 10px 10px 0px 0px;
+
+		top: 0px;
+	}
+	100% {
+		// margin: 0px 0px 10px 10px;
+
+		top: 3px;
 	}
 }

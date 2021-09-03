@@ -97,6 +97,7 @@ select {
 }
 
 .header__menu_item {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,6 +121,10 @@ select {
 
 .header__menu_item:last-child {
   border-right: none;
+}
+
+.header__menu_item:hover {
+  background-color: rgba(255, 0, 0, 0.233);
 }
 
 /*Footer*/
@@ -158,6 +163,7 @@ select {
 }
 
 .footer__menu_item {
+  cursor: pointer;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 300;
@@ -167,6 +173,10 @@ select {
   /* identical to box height, or 21px */
   /* white */
   color: #ffffff;
+}
+
+.footer__menu_item:hover {
+  color: red;
 }
 
 .footer__contact {
@@ -220,7 +230,40 @@ select {
 }
 
 .footer__contact_item-links {
+  position: relative;
   margin: 0px 12.5px 0px 12.5px;
+}
+
+.footer__contact_item-links:hover {
+  cursor: pointer;
+  -webkit-animation-name: dragging;
+          animation-name: dragging;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes dragging {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 3px;
+  }
+}
+
+@keyframes dragging {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 3px;
+  }
 }
 
 body {
@@ -231,6 +274,7 @@ body {
 /*Blocks*/
 .container {
   max-width: 1110px;
+  width: 100%;
   margin: auto;
 }
 
