@@ -364,6 +364,7 @@ body {
 /*Classes*/
 .button {
 	display: flex;
+	cursor: pointer;
 	height: 50px;
 	// margin: 0 0 150px 0;
 	align-items: center;
@@ -387,6 +388,13 @@ body {
 		text-align: center;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
+		&:hover {
+			animation-name: btn;
+			animation-duration: 2s;
+			animation-timing-function: linear;
+			// animation-delay: 1s;
+			animation-iteration-count: infinite;
+		}
 	}
 
 	&_2 {
@@ -406,6 +414,13 @@ body {
 		text-align: center;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
+		&:hover {
+			animation-name: btn;
+			animation-duration: 2s;
+			animation-timing-function: linear;
+			// animation-delay: 1s;
+			animation-iteration-count: infinite;
+		}
 	}
 	&_3 {
 		display: flex;
@@ -413,6 +428,7 @@ body {
 		justify-content: center;
 		align-items: center;
 
+		cursor: pointer;
 		width: 254px;
 		height: 50px;
 
@@ -432,6 +448,13 @@ body {
 		margin: 0px 0px 60px 0px;
 
 		color: #ffffff;
+		&:hover {
+			animation-name: btn;
+			animation-duration: 2s;
+			animation-timing-function: linear;
+			// animation-delay: 1s;
+			animation-iteration-count: infinite;
+		}
 	}
 	&_4 {
 		display: flex;
@@ -455,10 +478,16 @@ body {
 		text-align: center;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
-
-		/* white */
+		cursor: pointer;
 
 		color: #ffffff;
+		&:hover {
+			animation-name: btn_4;
+			animation-duration: 2s;
+			animation-timing-function: linear;
+			// animation-delay: 1s;
+			animation-iteration-count: infinite;
+		}
 	}
 }
 
@@ -488,3 +517,26 @@ body {
 // 		max-width: 1110px;
 // 	}
 // }
+
+@keyframes btn {
+	0% {
+		background-color: #998431;
+	}
+	50% {
+		background-color: red;
+	}
+	100% {
+		background-color: #998431;
+	}
+}
+@keyframes btn_4 {
+	0% {
+		background-color: #282828;
+	}
+	50% {
+		background-color: #998431;
+	}
+	100% {
+		background-color: #282828;
+	}
+}

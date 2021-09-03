@@ -639,6 +639,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
   height: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -673,6 +674,17 @@ body {
   text-transform: uppercase;
 }
 
+.button_1:hover {
+  -webkit-animation-name: btn;
+          animation-name: btn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 .button_2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -697,6 +709,17 @@ body {
   text-transform: uppercase;
 }
 
+.button_2:hover {
+  -webkit-animation-name: btn;
+          animation-name: btn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 .button_3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -711,6 +734,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
   width: 254px;
   height: 50px;
   background: #998431;
@@ -726,6 +750,17 @@ body {
   /* white */
   margin: 0px 0px 60px 0px;
   color: #ffffff;
+}
+
+.button_3:hover {
+  -webkit-animation-name: btn;
+          animation-name: btn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .button_4 {
@@ -758,8 +793,65 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  /* white */
+  cursor: pointer;
   color: #ffffff;
 }
 
+.button_4:hover {
+  -webkit-animation-name: btn_4;
+          animation-name: btn_4;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 /*Media*/
+@-webkit-keyframes btn {
+  0% {
+    background-color: #998431;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: #998431;
+  }
+}
+@keyframes btn {
+  0% {
+    background-color: #998431;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: #998431;
+  }
+}
+
+@-webkit-keyframes btn_4 {
+  0% {
+    background-color: #282828;
+  }
+  50% {
+    background-color: #998431;
+  }
+  100% {
+    background-color: #282828;
+  }
+}
+
+@keyframes btn_4 {
+  0% {
+    background-color: #282828;
+  }
+  50% {
+    background-color: #998431;
+  }
+  100% {
+    background-color: #282828;
+  }
+}
